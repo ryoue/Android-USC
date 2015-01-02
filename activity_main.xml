@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@drawable/linear_gradient"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/uscl"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"        
+        android:src="@drawable/usc_logo" />
+    
+    <Button android:id="@+id/singi"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/uscl"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/sign_in_button_set"
+        android:text="Login"
+        android:shadowColor="#232323"
+        android:shadowRadius="3"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:src="@drawable/sign_in_button_set"/>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="76dp"
+        android:shadowColor="#232323"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="The University of San Carlos"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fbc028"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uscl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:shadowColor="#232323"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="Unified Access Portal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fbc028"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/singi"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+</RelativeLayout>
